@@ -96,4 +96,10 @@
     <password>0mLtEI05QpCUMV8rg7AXoQ==</password>
     <salt>eVL9xAN//0iHeA0n</salt>
   </user>
+  <user>
+    <id>17</id>
+    <username>testimi</username>
+    <password>brN+tu/Qo+q0dTvNGzQCqw==</password>
+    <salt>hMEqQlV7a8Q3B8Ec</salt>
+  </user>
 </users>

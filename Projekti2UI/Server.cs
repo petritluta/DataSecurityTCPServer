@@ -7,6 +7,7 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.IO;
+using System.Threading;
 
 namespace Projekti2UI{
 
@@ -178,18 +179,10 @@ namespace Projekti2UI{
         }
         
 
-        public void listen()
+        public void responseToClient(Socket client)
         {
-            server.Listen(10);
-
             while(true)
             {
-
-            
-                Socket client=server.Accept();
-
-                while(true)
-                {
                     byte[] bytes=new Byte[1024];
                     string data=null;
                     int numBytes=client.Receive(bytes);
@@ -249,14 +242,25 @@ namespace Projekti2UI{
                             break;
                         }
 
-
                     }
+            }
+            client.Shutdown(SocketShutdown.Both);
+            client.Close();  
+        }
 
-                   
-                }   
+        public void listen()
+        {
+            server.Listen(10);
 
-                client.Shutdown(SocketShutdown.Both);
-                client.Close(); 
+            while(true)
+            {
+
+            
+                Socket client=server.Accept();
+                Thread thread=new Thread(()=>this.responseToClient(client));
+                thread.Start();
+              
+               
             }
         }
 

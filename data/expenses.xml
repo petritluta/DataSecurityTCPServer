@@ -152,4 +152,36 @@
     <month>7</month>
     <userId>14</userId>
   </expense>
+  <expense>
+    <name>asd</name>
+    <value>213.1</value>
+    <type>asd</type>
+    <year>2012</year>
+    <month>2</month>
+    <userId>6</userId>
+  </expense>
+  <expense>
+    <name>faturaThread</name>
+    <value>100.5</value>
+    <type>thread</type>
+    <year>2010</year>
+    <month>5</month>
+    <userId>17</userId>
+  </expense>
+  <expense>
+    <name>faturaViti</name>
+    <value>130.3</value>
+    <type>fature</type>
+    <year>2012</year>
+    <month>4</month>
+    <userId>6</userId>
+  </expense>
+  <expense>
+    <name>fatura20</name>
+    <value>200001</value>
+    <type>20vjetori</type>
+    <year>2013</year>
+    <month>4</month>
+    <userId>17</userId>
+  </expense>
 </expenses>
