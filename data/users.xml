@@ -102,4 +102,10 @@
     <password>brN+tu/Qo+q0dTvNGzQCqw==</password>
     <salt>hMEqQlV7a8Q3B8Ec</salt>
   </user>
+  <user>
+    <id>18</id>
+    <username>vesa</username>
+    <password>oJa5IhA9dknr6u1J57Ngsg==</password>
+    <salt>SwmgErSSdYMq77WJ</salt>
+  </user>
 </users>
